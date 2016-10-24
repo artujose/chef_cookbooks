@@ -18,6 +18,5 @@ template "/etc/init.d/myJavaApp_service" do
 end
 
 service "myJavaApp_service" do
- start_cmd "/usr/lib/myJavaApp/bin/myJavaApp start"
  action [ :enable, :start]
 end
