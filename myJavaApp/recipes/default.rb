@@ -10,7 +10,6 @@ directory '/var/log/myJavaApp' do
  group 'root'
  mode '0755'
  recursive true
- action: create
 end
 
 template "/etc/init.d/myJavaApp_service" do
