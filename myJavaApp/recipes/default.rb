@@ -15,8 +15,6 @@ end
 template "/etc/init.d/myJavaApp_service" do
  source "myJavaApp_script.erb"
  mode 00700
- variables( 
-  server_port: node[:deploy]['myJavaApp'][:environment_variables][:server_port], app_host: node[:deploy]['myJavaApp'][:environment_variables][:app_host] )
 end
 
 service "myJavaApp_service" do
