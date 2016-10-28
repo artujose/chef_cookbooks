@@ -1,3 +1,9 @@
+# Author: Arturo Diaz
+# Cookbook Name:: myJavaApp
+# Recipe:: default
+#
+# Copyright (c) 2016 The Authors, All Rights Reserved.
+
 temp=Chef::Config[:file_cache_path]
 
  remote_file "#{Chef::Config[:file_cache_path]}/myJavaApp.jar" do
